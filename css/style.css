@@ -9,10 +9,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 ul,ol{
     list-style: none;
 }
@@ -101,7 +97,7 @@ main > section{
 
 .navbar .nav-items .nav-link{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: all linear .3s;
 }
 
@@ -129,7 +125,7 @@ main > section{
 }
 
 .banner .banner-description{
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 26px;
     padding-bottom: 30px;
 }
@@ -176,15 +172,180 @@ main > section{
 }
 /* Features Style End */
 
-/* Common Style Start */
-/* Common Style End */
+/* Enjoy Style Start */
+.enjoy .enjoy-text-content{
+    max-width: 590px;
+}
+
+.enjoy .enjoy-items-all{
+    max-width: 490px;
+}
+
+.enjoy-heading{
+    padding-bottom: 24px;
+}
+
+#enjoy-line{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.enjoy-description{
+    font-size: 1rem;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+
+
+.enjoy-main{
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.enjoy-items{
+    padding: 30px 40px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.enjoy-item-title{
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.enjoy-item-description{
+    line-height: 26px;
+    font-size: 1rem;
+}
+
+.my-btn-2{
+    padding: 2.8125rem;
+    margin-top: -100px;
+    margin-left: -100px;
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+.enjoy-btn-head{
+    color: #fff;
+    font-size: 4.0625rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.enjoy-btn-description{
+    color: #fff;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+/* Enjoy Style End */
+
+/* Fact Style Start */
+
+.facts{
+    padding-top: 100px;
+}
+
+.fact-section-heading{
+    padding-bottom: 24px;
+}
+
+.fact-heading-content{
+    max-width: 542px;
+    padding-bottom: 100px;
+}
+
+.fact-list{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fact-item{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 45px;
+}
+
+.fact-title{
+    font-size: 2.8125rem;
+    font-weight: 600;
+}
+
+.fact-description{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.fact-item img{
+    max-width: 20%;
+}
+/* Fact Style End */
+
+/* Sponspors Style Start */
+.sponspors{
+    margin-top: 100px;
+}
+
+.st{
+    padding-bottom: 24px;
+}
+
+.sponspors-heading{
+    max-width: 542px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.sponser-img{
+    max-width: 10%;
+    filter: grayscale(100%);
+}
+
+.sponspors-logos{
+    justify-content: space-between;
+    align-items: center;
+}
+/* Sponspors Style End */
+
+/* Footer Style Start */
+.footer{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.footer-main{
+    padding: 40px;
+    background: #FFF4E7;
+    text-align: center;
+}
+
+.footer-title{
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+/* Footer Style End */
 
 
 /* Responsive Style Start */
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-items,
-    .features{
+    .features,
+    .enjoy-main,
+    .fact-list{
         flex-direction: column;
     }
 
@@ -216,6 +377,60 @@ main > section{
     }
     /* Features Style Responsive End */
 
+    /* Enjoy Style Responsive Start */
+        .enjoy{
+            padding: 0 20px;
+        }
+
+        .fact-heading-content{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+        .my-btn-2{
+            margin-top: 30px;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .enjoy-main{
+            gap: 40px;
+        }
+    /* Enjoy Style Responsive End */
+
+    /* Fact Style Responsive Start */
+    .facts{
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .fact-item{
+        margin-bottom: 20px;
+        min-width: 100%;
+    }
+
+    .fact-title{
+        font-size: 2.8125rem;
+        font-weight: 600;
+    }
+    /* Fact Style Responsive End */
+
+    /* Sponspors Style Responsive Start */
+    .sponspors{
+        padding: 0 20px;
+    }
+
+    .sponspors-logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+
+    .sponser-img{
+        max-width: 50%;
+    }
+    /* Sponspors Style Responsive End */
+
     /* Features Style Responsive Start */
     /* Features Style Responsive End */
 }
@@ -223,7 +438,9 @@ main > section{
 @media screen and (min-width: 577px) and (max-width: 767px) {
     .navbar,
     .nav-items,
-    .features{
+    .features,
+    .enjoy-main,
+    .fact-list{
         flex-direction: column;
     }
 
@@ -254,12 +471,82 @@ main > section{
          text-align: center;
     }
     /* Features Style Responsive End */
+
+    /* Enjoy Style Responsive Start */
+        .enjoy{
+            padding: 0 20px;
+        }
+
+        .my-btn-2{
+            margin-top: 30px;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .enjoy-main{
+            gap: 40px;
+        }
+
+        .enjoy .enjoy-items-all{
+            max-width: 100%;
+        }
+
+        .enjoy-text-content{
+            text-align: center;
+            margin: 0 auto;
+        }
+    /* Enjoy Style Responsive End */
+
+    /* Fact Style Responsive Start */
+    .facts{
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .fact-heading-content{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .fact-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .fact-item{
+        margin-bottom: 20px;
+    }
+
+    .fact-title{
+        font-size: 2.8125rem;
+        font-weight: 600;
+    }
+    /* Fact Style Responsive End */
+
+    /* Sponspors Style Responsive Start */
+    .sponspors{
+        padding: 0 20px;
+    }
+
+    .sponspors-logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+
+    .sponser-img{
+        max-width: 50%;
+    }
+    /* Sponspors Style Responsive End */
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
 .navbar,
     .nav-items,
-    .features{
+    .features,
+    .enjoy-main,
+    .fact-list{
         flex-direction: column;
     }
 
@@ -290,12 +577,87 @@ main > section{
          text-align: center;
     }
     /* Features Style Responsive End */
+
+    /* Enjoy Style Responsive Start */
+        .enjoy{
+            padding: 0 20px;
+        }
+
+        .my-btn-2{
+            margin-top: 30px;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .enjoy-main{
+            gap: 40px;
+        }
+
+        .enjoy .enjoy-items-all{
+            max-width: 100%;
+        }
+
+        .enjoy-text-content{
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .enjoy-items-all{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    /* Enjoy Style Responsive End */
+
+    /* Fact Style Responsive Start */
+    .facts{
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .fact-heading-content{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .fact-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .fact-item{
+        margin-bottom: 20px;
+    }
+
+    .fact-title{
+        font-size: 2.8125rem;
+        font-weight: 600;
+    }
+    /* Fact Style Responsive End */
+
+    /* Sponspors Style Responsive Start */
+    .sponspors{
+        padding: 0 20px;
+    }
+
+    .sponspors-logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+
+    .sponser-img{
+        max-width: 50%;
+    }
+    /* Sponspors Style Responsive End */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px){
     .navbar,
     .nav-items,
-    .features{
+    .features,
+    .enjoy-main{
         flex-direction: column;
     }
 
@@ -326,6 +688,80 @@ main > section{
          text-align: center;
     }
     /* Features Style Responsive End */
+
+     /* Enjoy Style Responsive Start */
+        .enjoy{
+            padding: 0 20px;
+        }
+
+        .my-btn-2{
+            margin-top: 30px;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .enjoy-main{
+            gap: 40px;
+        }
+
+        .enjoy .enjoy-items-all{
+            max-width: 100%;
+        }
+
+        .enjoy-text-content{
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .enjoy-items-all{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    /* Enjoy Style Responsive End */
+
+    /* Fact Style Responsive Start */
+    .facts{
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .fact-heading-content{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .fact-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .fact-item{
+        margin-bottom: 20px;
+    }
+
+    .fact-title{
+        font-size: 2.8125rem;
+        font-weight: 600;
+    }
+    /* Fact Style Responsive End */
+
+    /* Sponspors Style Responsive Start */
+    .sponspors{
+        padding: 0 20px;
+    }
+
+    .sponspors-logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+    }
+
+    .sponser-img{
+        max-width: 50%;
+    }
+    /* Sponspors Style Responsive End */
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1440px){
@@ -354,6 +790,25 @@ main > section{
     .features-main{
         padding: 0 20px;
     }
+
+     /* Enjoy Style Responsive Start */
+        .enjoy{
+            padding: 0 20px;
+        }
+    /* Enjoy Style Responsive End */
+
+    /* Fact Style Responsive Start */
+    .facts{
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    /* Fact Style Responsive End */
+
+    /* Sponspors Style Responsive Start */
+    .sponspors{
+        padding: 0 40px;
+    }
+    /* Sponspors Style Responsive End */
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1500px){
@@ -378,5 +833,24 @@ main > section{
     .banner .banner-heading{
         font-size: 4rem;
     }
+
+    /* Enjoy Style Responsive Start */
+        .enjoy{
+            padding: 0 20px;
+        }
+    /* Enjoy Style Responsive End */
+
+    /* Fact Style Responsive Start */
+    .facts{
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    /* Fact Style Responsive End */
+
+    /* Sponspors Style Responsive Start */
+    .sponspors{
+        padding: 0 40px;
+    }
+    /* Sponspors Style Responsive End */
 }
 /* Responsive Style End */
