@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Common Style Start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,div,span,li,p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.dark-1{
+    color: #131313;
+}
+
+.dark-2{
+    color: #424242;
+}
+
+.dark-3{
+    color: #727272;
+}
+
+.section-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.my-btn{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+.my-btn:hover{
+    background-color: #252525;
+    color: #fff;
+}
+
+/* Common Style End */
+
+
+/* Header Style Start */
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.navbar .nav-items{
+    gap: 100px;
+}
+
+.navbar .nav-items .nav-link{
+    font-weight: 500;
+    font-size: 18px;
+    transition: all linear .3s;
+}
+
+.navbar .nav-items .nav-link:hover{
+    color: #FF900E;
+}
+
+.banner{
+    padding: 102px 0 45px 0;
+}
+
+.banner .banner-main{
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .banner-text-content{
+    max-width: 862px;
+}
+
+.banner .banner-heading{
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.banner .banner-description{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+
+.banner img{
+    margin-top: 50px;
+
+}
+
+/* Header Style End */
+
+/* Common Style Start */
+/* Common Style End */
+
+
+/* Responsive Style Start */
+@media screen and (max-width: 576px) {
+    .navbar,
+    .nav-items{
+        flex-direction: column;
+    }
+
+    .navbar{
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar .nav-items{
+        gap: 20px;
+    }
+
+    .banner{
+    padding: 10px 20px;
+    }
+
+    .banner .banner-heading{
+        font-size: 1.875rem;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .navbar,
+    .nav-items{
+        flex-direction: column;
+    }
+
+    .navbar{
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar .nav-items{
+        gap: 20px;
+    }
+
+    .banner{
+    padding: 10px 20px;
+    }
+
+    .banner .banner-heading{
+        font-size: 3.125rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+.navbar,
+    .nav-items{
+        flex-direction: column;
+    }
+
+    .navbar{
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar .nav-items{
+        gap: 20px;
+    }
+
+    .banner{
+    padding: 10px 20px;
+    }
+
+    .banner .banner-heading{
+        font-size: 3.125rem;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+.navbar,
+    .nav-items{
+        flex-direction: column;
+    }
+
+    .navbar{
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar .nav-items{
+        gap: 20px;
+    }
+
+    .banner{
+    padding: 10px 20px;
+    }
+
+    .banner .banner-heading{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+.navbar,
+    .nav-items{
+        flex-direction: column;
+    }
+
+    .navbar{
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar .nav-items{
+        gap: 20px;
+    }
+
+    .banner{
+    padding: 10px 20px;
+    }
+
+    .banner .banner-heading{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1500px){
+.navbar,
+    .nav-items{
+        flex-direction: column;
+    }
+
+    .navbar{
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navbar .nav-items{
+        gap: 20px;
+    }
+
+    .banner{
+    padding: 10px 20px;
+    }
+
+    .banner .banner-heading{
+        font-size: 4rem;
+    }
+}
+/* Responsive Style End */
